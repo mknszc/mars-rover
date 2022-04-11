@@ -35,19 +35,19 @@ class MoveRepository
             }
 
             if (CommandEnum::MOVE == $char) {
-                if ($this->new_position == DirectionEnum::NORT) {
+                if ($this->new_position == DirectionEnum::EAST) {
                     if ($this->rover_x_cord + 1 <= $this->x_cord) {
                         $this->rover_x_cord += 1;
                     }
-                } else if ($this->new_position == DirectionEnum::SOUTH) {
+                } else if ($this->new_position == DirectionEnum::EAST) {
                     if ($this->rover_x_cord - 1 >= 0) {
                         $this->rover_x_cord -= 1;
                     }
-                } else if ($this->new_position == DirectionEnum::EAST) {
+                } else if ($this->new_position == DirectionEnum::NORT) {
                     if ($this->rover_y_cord + 1 <= $this->y_cord) {
                         $this->rover_y_cord += 1;
                     }
-                } else if ($this->new_position == DirectionEnum::WEAST) {
+                } else if ($this->new_position == DirectionEnum::SOUTH) {
                     if ($this->rover_y_cord - 1 >= 0) {
                         $this->rover_y_cord -= 1;
                     }
