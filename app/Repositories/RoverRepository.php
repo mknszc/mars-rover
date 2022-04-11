@@ -32,7 +32,8 @@ class RoverRepository
         return (Cache::has($this->prefix . $name) ? True : False);
     }
 
-    public function update($request) {
+    public function update($request)
+    {
         self::create($request);
 
         return True;
