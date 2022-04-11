@@ -39,7 +39,7 @@ class MoveRepository
                     if ($this->rover_x_cord + 1 <= $this->x_cord) {
                         $this->rover_x_cord += 1;
                     }
-                } else if ($this->new_position == DirectionEnum::EAST) {
+                } else if ($this->new_position == DirectionEnum::WEAST) {
                     if ($this->rover_x_cord - 1 >= 0) {
                         $this->rover_x_cord -= 1;
                     }
